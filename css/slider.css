@@ -43,6 +43,10 @@
 	background-repeat: no-repeat;
 }
 
+.item2, .item3{
+	top:10px;
+}
+
 .iosSlider .slider .item .inner .text1 {
   background: none repeat scroll 0 0 #000;
   opacity: 0;
@@ -65,11 +69,11 @@
 	color: #fff; 
 }
 
-.iosSlider .slider .item1 .inner { background-image: url('../images/slide.jpg'); }
+.iosSlider .slider .item1 .inner { background-image: url('http://aiuglobal.com/wp-content/uploads/2015/04/Tution.jpg'); }
 
-.iosSlider .slider .item2 .inner { background-image: url('../images/slide1.jpg'); }
+.iosSlider .slider .item2 .inner { background-image: url('http://www.hometuition2u.com/wp-content/uploads/2015/10/home-tuition-09.gif'); }
 
-.iosSlider .slider .item3 .inner { background-image: url('../images/slide2.jpg'); }
+.iosSlider .slider .item3 .inner { background-image: url('http://www.ntid.rit.edu/sites/default/files/u127/title2x.png'); }
 
 .sliderContainer .slideSelectors {
 	position: absolute;
