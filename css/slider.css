@@ -43,8 +43,8 @@
 	background-repeat: no-repeat;
 }
 
-.item2, .item3{
-	top:10px;
+.item2 .inner, .item3 .inner{
+	top:15px!important;
 }
 
 .iosSlider .slider .item .inner .text1 {
