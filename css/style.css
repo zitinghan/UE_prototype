@@ -329,7 +329,6 @@ header h1 a {
 	display: inline-block;
 	overflow: hidden;
 	width: 220px;
-    height: 116px;
 	font-size: 0;
 	line-height: 0;
 	
@@ -731,3 +730,20 @@ footer {
     background-position: right 0;
 }
 
+.tab-pane{
+    border:1px solid #ddd
+}
+
+.tab-pane table{
+    margin:10px;
+}
+
+a.loginBtn{
+    width:184px;
+    height:28px;
+    font-size:16px;
+    line-height: 28px;
+    margin-top:10px;
+    margin-left:5px;
+    text-align: center;
+}

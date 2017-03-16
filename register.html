@@ -8,6 +8,7 @@
 		<!-- <link rel="shortcut icon" href="images/favicon.ico" /> -->
 		<link rel="stylesheet" href="css/form.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<script src="js/jquery.js"></script>
 		<script src="js/jquery-migrate-1.2.1.js"></script>
 		<script src="js/script.js"></script>
@@ -16,6 +17,7 @@
 		<script src="js/jquery.ui.totop.js"></script>
 		<script src="js/jquery.equalheights.js"></script>
 		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 		<script>
 		$(document).ready(function(){
 			$().UItoTop({ easingType: 'easeOutQuart' });
@@ -49,7 +51,7 @@
 						<nav class="horizontal-nav full-width horizontalNav-notprocessed">
 							<ul class="sf-menu">
 								<li><a href="index.html">Home</a></li>
-								<li class="current"><a href="index-1.html">What We Do</a></li>
+								<li><a href="index-1.html">What We Do</a></li>
 								<li><a href="index-2.html">Media</a></li>
 								<li><a href="index-3.html">Get Involved</a></li>
 								<li><a href="index-4.html">Contacts</a></li>
@@ -64,11 +66,1023 @@
 		<div class="content">
 			<div class="container_12">
 				
-				<div>
-					Dear Tutors ! 
-
+				<div><br/>
+					<p>Dear Tutors !</p>
+					<p>
 					Thank you for your interest in registration. We would encourage all tutors to fill up all fields although not all fields are compulsory. This is to provide more information to students and parents so that you will increase your chances of being selected by parents and students and do log in to your account and update as often as you can as the most updated tutors' profile and tutors with photos would be displayed first. Please like us in facebook too to receive reqular assignments updates.
+					</p>
 				</div>
+				<form id="form">
+					<table width="100%" cellpadding="10" >
+	        			<tbody>
+				          <tr>
+				            <td> Full Name as in NRIC* </td>
+				            <td><div class="input">
+				              <input name="tutor_name" size="51" tabindex="1" value="" id="tutor_name" type="text">
+				              </div></td>
+				          </tr>
+				          <tr>
+				            <td>NRIC Number*</td>
+				            <td><div class="input">
+				              <input name="tutor_nric" tabindex="2" value="" id="tutor_nric" type="text" size="51">
+				              </div></td>
+				          </tr>
+				          <tr>
+				            <td>Date of Birth*</td>
+				            <td><div class="input">
+				              <input type="text" name="tutor_dob"> (mm/dd/yyyy)
+				              </div></td>
+				          </tr>
+				          <tr>
+				            <td>Gender*</td>
+				            <td><select name="tutor_sex" id="tutor_sex" tabindex="3">
+				              <option value="" selected="selected">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+				              <option value="Male">Male</option>
+				              <option value="Female">Female</option>
+				              </select>
+				             
+				          </tr>
+
+				          <tr>
+				            <td>Age</td>
+				            <td><div class="input">
+				              <input name="tutor_age" tabindex="4" value="" id="tutor_age" type="text" size="19">
+				              </div></td>
+				          </tr>
+				          
+				          <tr>
+				            <td>Race</td>
+				            <td><select name="tutor_race" tabindex="5" id="tutor_race">
+				              <option value="" selected="selected">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+				              <option value="Chinese">Chinese</option>
+				              <option value="Malay">Malay</option>
+				              <option value="Indian">Indian</option>
+				              <option value="Aussie">Aussie</option>
+				              <option value="Black/African">Black/African</option>
+				              <option value="Caribbean">Caribbean</option>
+				              <option value="Eurasian">Eurasian</option>
+				              <option value="Filipino">Filipino</option>
+				              <option value="Japanese">Japanese</option>
+				              <option value="Korean">Korean</option>
+				              <option value="Indonesian">Indonesian</option>
+				              <option value="Latino/Hispanic">Latino/Hispanic</option>
+				              <option value="Oceania">Oceania</option>
+				              <option value="Middle Eastern">Middle Eastern</option>
+				              <option value="Thai">Thai</option>
+				              <option value="Vietnamese">Vietnamese</option>
+				              <option value="White/Caucasian">White/Caucasian</option>
+				              <option value="Others">Others</option>
+				              </select>
+				              Nationality
+				              <select name="tutor_nationality" tabindex="6" id="tutor_nationality">
+				                <option value="" selected="selected">-</option>
+				                <option value="Singapore">Singapore</option>
+				                <option value="Malaysia">Malaysia</option>
+				                <option value="China">China</option>
+				                <option value="Australia">Australia</option>
+				                <option value="Cambodia">Cambodia</option>
+				                <option value="France">France</option>
+				                <option value="Germany">Germany</option>
+				                <option value="Indonesia">Indonesia</option>
+				                <option value="Japan">Japan</option>
+				                <option value="Korea">Korea</option>
+				                <option value="Russia">Russia</option>
+				                <option value="Taiwan">Taiwan</option>
+				                <option value="Thailand">Thailand</option>
+				                <option value="UK">UK</option>
+				                <option value="USA">USA</option>
+				                <option value="Vietnam">Vietnam</option>
+				                <option value="Others">Others</option>
+				                </select></td>
+				          </tr>
+				          
+				          <tr>
+				            <td>Email address*</td>
+				            <td><div class="input">
+				              <input name="tutor_email" size="42" tabindex="7" value="" id="tutor_email" type="text">
+				              </div></td>
+				          </tr>
+				          <tr>
+				            <td>MSN Address</td>
+				            <td><div class="input">
+				              <input name="tutor_msn" size="42" tabindex="8" value="" id="tutor_msn" type="text">
+				              </div></td>
+				          </tr>
+				          <tr>
+				            <td>Home Phone  </td>
+				            <td><div class="input">
+				              <input name="tutor_home_phone" tabindex="9" value="" id="tutor_home_phone" type="text" size="15">
+				            </td>
+				          </tr>
+
+				          <tr>
+				            <td>Hand Phone (For Login)</td>
+				            <td><div class="input">
+				              
+				              <input name="tutor_hand_phone" tabindex="10" value="" id="tutor_hand_phone" type="text" size="18">
+				              
+				              </div></td>
+				          </tr>
+				          
+				          <tr>
+				            <td>Other contact number</td>
+				            <td><div class="input">
+				              <input name="tutor_other_contact" tabindex="11" value="" id="tutor_other_contact" type="text" size="15">
+				              </div></td>
+				          </tr>
+				          <tr>
+				            <td>Block no.</td>
+				            <td><div class="input">
+				              <input name="tutor_add_block" tabindex="12" value="" id="tutor_add_block" type="text" size="15">
+				              </div></td>
+				          </tr>
+				          <tr>
+				            <td>Unit no.</td>
+				            <td><div class="input">
+				              <input name="tutor_add_unit" tabindex="14" value="" id="tutor_add_unit" type="text" size="14">
+				              </div></td>
+				          </tr>
+				          <tr>
+				            <td>Road Name*</td>
+				            <td><div class="input">
+				              <input name="tutor_add_road" size="51" tabindex="13" value="" id="tutor_add_road" type="text">
+				              </div></td>
+				          </tr>
+				          
+				          
+				          <tr>
+				            <td>Area of preference</td>
+				            <td><select name="tutor_add_area" tabindex="16" id="tutor_add_area">
+				              <option value="" selected="selected">- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+				              <option value="East"> East </option>
+				              <option value="North"> North </option>
+				              <option value="Northeast"> Northeast </option>
+				              <option value="West"> West </option>
+				              </select></td>
+				          </tr>
+				          <tr>
+				            <td>Nearest MRT* </td>
+				            <td><select name="tutor_nearest_mrt" tabindex="17" id="tutor_nearest_mrt">
+				              <option value="" selected="selected">-</option>
+				              <option value="E1(bugis)">E1(bugis)</option>
+				              <option value="E2(lavender)">E2(lavender)</option>
+				              <option value="E3(kallang)">E3(kallang)</option>
+				              <option value="E4(ajunied)">E4(ajunied)</option>
+				              <option value="E5(paya lebar)">E5(paya lebar)</option>
+				              <option value="E6(eunos)">E6(eunos)</option>
+				              <option value="E7(kembangan)">E7(kembangan)</option>
+				              <option value="E8(bedok)">E8(bedok)</option>
+				              <option value="E9(tanah merah)">E9(tanah merah)</option>
+				              <option value="E10(simei)">E10(simei)</option>
+				              <option value="E11(tampines)">E11(tampines)</option>
+				              <option value="E12(pasir ris)">E12(pasir ris)</option>
+				              <option value="W1(tanjong pagar)">W1(tanjong pagar)</option>
+				              <option value="W2(outram park)">W2(outram park)</option>
+				              <option value="W3(tiong bahru)">W3(tiong bahru)</option>
+				              <option value="W4(redhill)">W4(redhill)</option>
+				              <option value="W5(queenstown)">W5(queenstown)</option>
+				              <option value="W6(commonwealth)">W6(commonwealth)</option>
+				              <option value="W7(buona vista)">W7(buona vista)</option>
+				              <option value="W8(clementi)">W8(clementi)</option>
+				              <option value="W9(jurong east)">W9(jurong east)</option>
+				              <option value="W11(lakeside)">W11(lakeside)</option>
+				              <option value="W12(jurong west)">W12(jurong west)</option>
+				              <option value="N1(dhoby ghaut)">N1(dhoby ghaut)</option>
+				              <option value="N2(somerset)">N2(somerset)</option>
+				              <option value="N3(orchard)">N3(orchard)</option>
+				              <option value="N4(newton)">N4(newton)</option>
+				              <option value="N5(novena)">N5(novena)</option>
+				              <option value="N6(toa payoh)">N6(toa payoh)</option>
+				              <option value="N8(bishan)">N8(bishan)</option>
+				              <option value="N9(amk)">N9(amk)</option>
+				              <option value="N10(yio chu kang)">N10(yio chu kang)</option>
+				              <option value="N11(khatib)">N11(khatib)</option>
+				              <option value="N12(yishun)">N12(yishun)</option>
+				              <option value="N14(sembawang)">N14(sembawang)</option>
+				              <option value="N15(admiralty)">N15(admiralty)</option>
+				              <option value="N16(woodland)">N16(woodland)</option>
+				              <option value="N16(marsiling)">N17(marsiling)</option>
+				              <option value="N21(choa chu kang)">N21(choa chu kang)</option>
+				              <option value="N22(bukit panjang)">N22(bukit panjang)</option>
+				              <option value="N23(bukit batok)">N23(bukit batok)</option>
+				              <option value="Balestier">Balestier</option>
+				              <option value="Bendemeer">Bendemeer</option>
+				              <option value="StGeorge">StGeorge</option>
+				              <option value="LittleIndia">LittleIndia</option>
+				              <option value="FarrerPark">FarrerPark</option>
+				              <option value="BoonKeng">BoonKeng</option>			  
+				              <option value="PotongPasir">PotongPasir</option>
+				              <option value="Serangoon">Serangoon</option>
+				              <option value="Hougang">Hougang</option>
+				              <option value="SengKang">SengKang</option>
+				              <option value="Buangkok">Buangkok</option>
+				              <option value="Punggol">Punggol</option>
+				              </select></td>
+						   </tr>
+				          
+				          <tr>
+				            <td>Tuition experience*</td>
+				            <td><select name="tutor_experience" tabindex="15" id="tutor_experience">
+				              <option value="" selected="selected">-</option>
+				              <option value="1ST YEAR"> 1ST YEAR </option>
+				              <option value="2ND YEAR"> 2ND YEAR </option>
+				              <option value="3RD YEAR"> 3RD YEAR </option>
+				              <option value="4TH YEAR"> 4TH YEAR </option>
+				              <option value="5TH YEAR"> 5TH YEAR </option>
+				              <option value="6TH YEAR"> 6TH YEAR </option>
+				              <option value="7TH YEAR"> 7TH YEAR </option>
+				              <option value="8TH YEAR"> 8TH YEAR </option>
+				              <option value="9TH YEAR"> 9TH YEAR </option>
+				              <option value="> 10TH YEAR"> &gt; 10TH YEAR </option>
+				              </select></td>
+				          </tr>
+				          
+				          <tr>
+				            <td>How many students are you currently tutoring  now?</td> 
+				            <td><select name="no_current_students">
+				              <option value="" selected="selected">- </option>
+				              <option value="0">0</option>
+				              <option value="1">1</option>
+				              <option value="2">2</option>
+				              <option value="3">3</option>
+				              <option value="4">4</option>
+				              <option value="5">5</option>
+				              <option value="6">6</option>
+				              <option value="7">7</option>
+				              <option value="8">8</option>
+				              <option value="9">9</option>
+				              <option value="10">10</option>
+				              <option value="10+">10+</option>
+				              </select>              </td>
+				            </tr>
+				          <tr>
+				            <td>How many students have you taught in the past?&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				            <td><select name="no_taught_students">
+				              <option value="" selected="selected">- </option>
+				              <option value="0">0</option>
+				              <option value="1">1</option>
+				              <option value="2">2</option>
+				              <option value="3">3</option>
+				              <option value="4">4</option>
+				              <option value="5">5</option>
+				              <option value="6">6</option>
+				              <option value="7">7</option>
+				              <option value="8">8</option>
+				              <option value="9">9</option>
+				              <option value="10">10</option>
+				              <option value="10+">10+</option>
+				              </select></td>
+				          </tr>
+				          <tr>
+				            <td>Attached Certificate </td>
+				            <td> 
+				              <input name="txtPath_Certificate" type="file" value="">	</td>
+				          </tr>
+				          
+				          <tr>
+				            <td>Photocopy of NRIC</td>
+				             <td> 
+				               <input name="txtPath_NRIC" type="file" value="">	
+				             </td>
+						  </tr>
+				          
+				          <tr>
+				            <td>Personal Video (Embed YouTube Link) </td>
+				             <td><input type="text" name="tutor_personal_video"></td>
+				          </tr>
+			          </tbody>
+	        		</table>
+
+	        		<br/>
+	        		<div>
+	        			<div><b>Personal Particulars</b></div>
+					  <!-- Nav tabs -->
+					  <ul class="nav nav-tabs" role="tablist">
+					    <li role="presentation" class="active"><a href="#education" aria-controls="education" role="tab" data-toggle="tab">Educational Qualification Obtained</a></li>
+					    <li role="presentation"><a href="#Occupation" aria-controls="Occupation" role="tab" data-toggle="tab">Current Occupation</a></li>
+					  </ul>
+					  <!-- Tab panes -->
+					  <div class="tab-content">
+					    <div role="tabpanel" class="tab-pane active" id="education">
+
+					    	
+					    	<table width="100%" cellpadding="2" cellspacing="2">
+						        <tbody>
+						          <tr>
+								     <td colspan="6"><b>Name of the institute &amp; course of study Eg.NTU accountancy</b></td>
+								   </tr>
+						          <tr>
+						            <td>O Level</td>
+						    		   <td>
+						    		     </td>
+									   <td >
+									   <select name="tutor_edu_qualification_olevel_school" id="tutor_edu_qualification_olevel_school">
+									     <option value=""></option>
+									     <option value="admiralty">admiralty</option>
+									     <option value="ahmad ibrahim">ahmad ibrahim</option>
+									     <option value="anderson sec">anderson sec</option>
+									     <option value="ang mo kio sec">ang mo kio sec</option>
+									     <option value="anglo chinese(barker rd)">anglo chinese(barker rd)</option>
+									     <option value="anglo chinese(independent)">anglo chinese(inde)</option>
+									     <option value="assumption eng">assumption eng</option>
+									     <option value="balestier hill">balestier hill</option>
+									     <option value="bartley">bartley</option>
+									     <option value="beatty">beatty</option>
+									     <option value="bedok green">bedok green</option>
+									     <option value="bedok north">bedok north</option>
+									     <option value="bedok south">bedok south</option>
+									     <option value="bedok town">bedok town</option>
+									     <option value="bedok view">bedok view</option>
+									     <option value="bendemeer">bendemeer</option>
+									     <option value="bishan park">bishan park</option>
+									     <option value="boon lay">boon lay</option>
+									     <option value="bowen">bowen</option>
+									     <option value="braddell-westlake">braddell-westlake</option>
+									     <option value="broadrick">broadrick</option>
+									     <option value="bukit batok">bukit batok</option>
+									     <option value="bukit merah">bukit merah</option>
+									     <option value="bukit panjang govt high">bukit panjang govt high</option>
+									     <option value="bukit view">bukit view</option>
+									     <option value="canberra">canberra</option>
+									     <option value="catholic high">catholic high</option>
+									     <option value="cedar girls">cedar girls</option>
+									     <option value="chai chee">chai chee</option>
+									     <option value="changkat changi">changkat changi</option>
+									     <option value="chestnut drive sec">chestnut drive sec</option>
+									     <option value="chij katong convent">chij katong convent</option>
+									     <option value="chij(toa payoh)">chij(toa payoh)</option>
+									     <option value="chij saint josephs convent">chij saint josephs convent</option>
+									     <option value="chij saint nicholas girls">chij saint nicholas girls</option>
+									     <option value="chij saint theresas convent">chij saint theresas convent</option>
+									     <option value="choa chu kang">choa chu kang</option>
+									     <option value="chong boon">chong boon</option>
+									     <option value="christ church">christ church</option>
+									     <option value="chua chu kang">chua chu kang</option>
+									     <option value="chung cheng high">chung cheng high</option>
+									     <option value="clementi town">clementi town</option>
+									     <option value="commonwealth">commonwealth</option>
+									     <option value="compassvale">compassvale</option>
+									     <option value="coral">coral</option>
+									     <option value="cresent girls">cresent girls</option>
+									     <option value="damai">damai</option>
+									     <option value="deyi">deyi</option>
+									     <option value="dunearn">dunearn</option>
+									     <option value="dunman">dunman</option>
+									     <option value="dunman high">dunman high</option>
+									     <option value="east spring">east spring</option>
+									     <option value="east view">east view</option>
+									     <option value="evergreen">evergreen</option>
+									     <option value="fairfield methodist">fairfield methodist</option>
+									     <option value="fajar">fajar</option>
+									     <option value="first toa payoh">first toa payoh</option>
+									     <option value="fuchun">fuchun</option>
+									     <option value="fuhua">fuhua</option>
+									     <option value="gan eng seng">gan eng seng</option>
+									     <option value="geylang methodist">geylang methodist</option>
+									     <option value="ghim moh">ghim moh</option>
+									     <option value="greenridge">greenridge</option>
+									     <option value="greenview">greenview</option>
+									     <option value="guangyang sec">guangyang sec</option>
+									     <option value="hai sing catholic">hai sing catholic</option>
+									     <option value="henderson sec">henderson sec</option>
+									     <option value="hillgrove sec">hillgrove sec</option>
+									     <option value="holy innocents high">holy innocents high</option>
+									     <option value="hong kah sec">hong kah sec</option>
+									     <option value="hougang sec">hougang sec</option>
+									     <option value="hua yi sec">hua yi sec</option>
+									     <option value="jin tai sec">jin tai sec</option>
+									     <option value="junyuan sec">junyuan sec</option>
+									     <option value="jurong sec">jurong sec</option>
+									     <option value="jurong west sec">jurong west sec</option>
+									     <option value="jurongville sec">jurongville sec</option>
+									     <option value="juying sec">juying sec</option>
+									     <option value="katong convent girls">katong convent girls</option>
+									     <option value="kent ridge sec">kent ridge sec</option>
+									     <option value="kranji sec">kranji sec</option>
+									     <option value="kuo chuan presbyterian sec">kuo chuan presbyterian sec</option>
+									     <option value="loyang sec">loyang sec</option>
+									     <option value="macpherson sec">macpherson sec</option>
+									     <option value="manjusri sec">manjusri sec</option>
+									     <option value="maris stella high">maris stella high</option>
+									     <option value="marsiling sec">marsiling sec</option>
+									     <option value="mayflower sec">mayflower sec</option>
+									     <option value="methodist girls">methodist girls</option>
+									     <option value="monks hill">monks hill</option>
+									     <option value="montfort">montfort</option>
+									     <option value="nan chiau high">nan chiau high</option>
+									     <option value="nan hua">nan hua</option>
+									     <option value="nanyang girls">nanyang girls</option>
+									     <option value="naval base">naval base</option>
+									     <option value="new town">new town</option>
+									     <option value="ngee ann">ngee ann</option>
+									     <option value="north view">north view</option>
+									     <option value="north vista">north vista</option>
+									     <option value="northbrooks">northbrooks</option>
+									     <option value="northland">northland</option>
+									     <option value="orchid park">orchid park</option>
+									     <option value="outram sec">outram sec</option>
+									     <option value="pasir ris crest">pasir ris crest</option>
+									     <option value="pasir ris">pasir ris</option>
+									     <option value="paya lebar methodist girls">paya lebar methodist girls</option>
+									     <option value="peicai">peicai</option>
+									     <option value="peirce">peirce</option>
+									     <option value="ping yi">ping yi</option>
+									     <option value="pioneer">pioneer</option>
+									     <option value="presbyterian high">presbyterian high</option>
+									     <option value="punggol">punggol</option>
+									     <option value="queenstown">queenstown</option>
+									     <option value="queensway">queensway</option>
+									     <option value="raffles girls">raffles girls</option>
+									     <option value="raffles institution">raffles institution</option>
+									     <option value="regent">regent</option>
+									     <option value="riverside">riverside</option>
+									     <option value="rivervalley high">rivervalley high</option>
+									     <option value="saint andrews">saint andrews</option>
+									     <option value="saint anthony canossian">saint anthony canossian</option>
+									     <option value="saint gabriels">saint gabriels</option>
+									     <option value="saint joseph institition">saint joseph institition</option>
+									     <option value="saint hildas">saint hildas</option>
+									     <option value="saint margarets">saint margarets</option>
+									     <option value="saint nicolass girls">saint nicolass girls</option>
+									     <option value="saint patricks">saint patricks</option>
+									     <option value="sembawang">sembawang</option>
+									     <option value="seng kang">seng kang</option>
+									     <option value="serangoon garden">serangoon garden</option>
+									     <option value="serangoon">serangoon</option>
+									     <option value="shuqun">shuqun</option>
+									     <option value="si ling">si ling</option>
+									     <option value="siglap">siglap</option>
+									     <option value="singapore chinese girls">singapore chinese girls</option>
+									     <option value="sin ming">sin ming</option>
+									     <option value="springfield">springfield</option>
+									     <option value="swiss cottage">swiss cottage</option>
+									     <option value="tampines">tampines</option>
+									     <option value="tanglin">tanglin</option>
+									     <option value="tanjong katong">tanjong katong</option>
+									     <option value="teck whye">teck whye</option>
+									     <option value="telok kurau">telok kurau</option>
+									     <option value="temasek">temasek</option>
+									     <option value="the chinese high">the chinese high</option>
+									     <option value="unity">unity</option>
+									     <option value="victoria">victoria</option>
+									     <option value="westlake">westlake</option>
+									     <option value="west spring">west spring</option>
+									     <option value="westwood">westwood</option>
+									     <option value="whitley">whitley</option>
+									     <option value="woodgrove">woodgrove</option>
+									     <option value="woodland ring">woodland ring</option>
+									     <option value="woodland">woodland</option>
+									     <option value="xinmin">xinmin</option>
+									     <option value="yio chu kang">yio chu kang</option>
+									     <option value="yishun">yishun</option>
+									     </select>
+									     <br>From: <br>
+									     <input name="O_Levels_from" size="4" tabindex="20" value="" id="O_Levels_from" type="text"> <br>To: <br><input name="O_Levels_to" size="4" tabindex="20" value="" id="O_Levels_to" type="text">			     </td>	  
+							  		  <td width="8%" valign="top">A Level</td>
+									  <td width="3%" valign="top">
+									    <input name="tutor_edu_qualification_alevel" value="1" id="tutor_edu_qualification_alevel" type="checkbox">			    </td>
+									  <td width="38%">
+									    <select name="tutor_edu_qualification_alevel_school" id="tutor_edu_qualification_alevel_school">
+									      <option value=""></option>
+									      <option value="HWA CHONG JC">HWA CHONG JC</option>
+									      <option value="NATIONAL JC">NATIONAL JC</option>
+									      <option value="RAFFLES JC">RAFFLES JC</option>
+									      <option value="TEMASEK JC">TEMASEK JC</option>
+									      <option value="VICTORIA JC">VICTORIA JC</option>
+									      <option value="ANDERSON JC">ANDERSON JC</option>
+									      <option value="ANGLO CHINESE JC">ANGLO CHINESE JC</option>
+									      <option value="CATHOLIC JC">CATHOLIC JC</option>
+									      <option value="JURONG JC">JURONG JC</option>
+									      <option value="MERIDIAN JC">MERIDIAN JC</option>
+									      <option value="NANYANG JC">NANYANG JC</option>
+									      <option value="PIONEER JC">PIONEER JC</option>
+									      <option value="SERANGOON JC">SERANGOON JC</option>
+									      <option value="ST ANDREWS JC">ST ANDREWS JC</option>
+									      <option value="TAMPINES JC">TAMPINES JC</option>
+									      <option value="YISHUN JC">YISHUN JC</option>
+									      <option value="INNOVA JC">INNOVA JC</option>
+									      <option value="MILLEMIUM INSTITUTE">MILLEMIUM INS</option>
+									      <option value="PRIVATE">PRIVATE</option>
+									      <option value="OVERSEAS">OVERSEAS</option>
+									      </select>
+									    <br>From: <br>
+									    <input name="A_Levels_from" size="4" tabindex="20" value="" id="A_Levels_from" type="text"> <br>To: <br><input name="A_Levels_to" size="4" tabindex="20" value="" id="A_Levels_to" type="text">			    </td> </tr>
+						          <tr>
+						            <td width="9%">Diploma</td>
+						         	  <td width="3%"><input name="tutor_edu_qualification_diploma" value="1" id="tutor_edu_qualification_diploma" type="checkbox">       </td>
+									  <td width="39%"><input name="tutor_edu_qualification_diploma_school" size="10" tabindex="20" value="" id="tutor_edu_qualification_diploma_school" type="text"> 
+									    From: <br>
+									    <input name="Diploma_from" size="4" tabindex="20" value="" id="Diploma_from" type="text"> <br>To: <br><input name="Diploma_to" size="4" tabindex="20" value="" id="Diploma_to" type="text"></td>   
+						       		  <td width="8%">Honors </td>
+						         	  <td width="3%"><input name="tutor_edu_qualification_honors" value="1" id="tutor_edu_qualification_honors" type="checkbox">          </td>
+									  <td width="38%"><input name="tutor_edu_qualification_honors_school" size="10" tabindex="21" value="" id="tutor_edu_qualification_school" type="text"> 
+									    From: <br>
+									    <input name="Honors_from" size="4" tabindex="20" value="" id="Honors_from" type="text"> <br>To: <br><input name="Honors_to" size="4" tabindex="20" value="" id="Honors_to" type="text"></td>    </tr>
+						          <tr>
+						            <td width="9%">Bachelor</td>
+						       		  <td width="3%"><input name="tutor_edu_qualification_bachelor" value="1" id="tutor_edu_qualification_bachelor" type="checkbox">        </td>
+									  <td width="39%"><input name="tutor_edu_qualification_bachelor_school" size="10" tabindex="22" value="" id="tutor_edu_qualification_bachelor_school" type="text"> From: <br><input name="Bachelor_from" size="4" tabindex="20" value="" id="Bachelor_from" type="text"> <br>To: <br><input name="Bachelor_to" size="4" tabindex="20" value="" id="Bachelor_to" type="text"></td>        
+						       		  <td width="8%">Master</td>
+						       		  <td width="3%"><input name="tutor_edu_qualification_master" value="1" id="tutor_edu_qualification_master" type="checkbox"></td>
+									  <td width="38%"><input name="tutor_edu_qualification_master_school" size="10" tabindex="23" value="" id="tutor_edu_qualification_master_school" type="text"> From: <br><input name="Master_from" size="4" tabindex="20" value="" id="Master_from" type="text"> <br>To:<br> <input name="Master_to" size="4" tabindex="20" value="" id="Master_to" type="text"></td>   
+								   </tr>
+						          <tr>
+						            <td width="9%">Others</td>
+						           	  <td width="3%"><input name="tutor_edu_qualification_others" value="1" id="tutor_edu_qualification_others" type="checkbox"> </td>
+									  <td width="39%"><input name="tutor_edu_qualification_others_school" size="10" tabindex="24" value="" id="tutor_edu_qualification_others_school" type="text"> From: <br><input name="Others_from" size="4" tabindex="20" value="" id="Others_from" type="text"> <br>To: <br><input name="Others_to" size="4" tabindex="20" value="" id="Others_to" type="text"></td>       <td colspan="2"></td>
+						       		  <td>&nbsp;</td>
+						   		   </tr>
+						          </tbody></table>
+					    </div>
+					    <div role="tabpanel" class="tab-pane" id="Occupation">
+					    	<table width="100%" cellpadding="2" cellspacing="2">
+							    <tbody><tr height="50"><td colspan="5"><b>Current Occupation</b></td></tr>
+							    <tr>
+							      <td>Current Occupation</td>
+							  		  <td><select name="tutor_current_occup" id="tutor_current_occup">
+							  		    <option value="" selected="selected">Tutor's Occupation</option>
+							  		    <option value="Working adult above age 20">Working adult above age 20</option>
+							  		    <option value="NS">NS</option>
+							  		    <option value="JC Student">JC Student</option>
+							  		    <option value="Poly Student">Poly Student</option>
+							  		    <option value="Fulltime Tutor">Fulltime Tutor</option>
+							  		    
+							  		    <option value="Undergrad">Undergrad</option>
+							  		    <option value="Finished O level-Awaiting Poly">Finished O level-Awaiting Poly</option>
+							  		    <option value="Finished Poly-Awaiting University">Finished Poly-Awaiting Uni</option>
+							  		    <option value="Pri Sch Teacher">Pri Sch Teacher</option>
+							  		    <option value="Ex Pri School Teacher">Ex Pri School Teacher</option>
+							  		    <option value="Sec Sch Teacher">Sec Sch Teacher</option>
+							  		    <option value="Ex Sec School Teacher">Ex Sec School Teacher</option>
+							  		    <option value="JC Lecturer">JC Lecturer</option>
+							  		    <option value="Ex JC Lecturer">Ex JC Lecturer</option>
+							  		    <option value="Poly Lecturer">Poly Lecturer</option>
+							  		    <option value="Ex Poly Lecturer">Ex Poly Lecturer</option>
+							  		    </select></td>
+									  <td></td>
+									  <td>Name of the Institute (for students) </td>
+									  <td colspan="2"><select name="tutor_institute_name_student" tabindex="26" id="tutor_institute_name_student">
+									    <option value=""></option>
+									    <option value="NUS">NUS</option>
+									    <option value="NTU">NTU</option>
+									    <option value="SIM">SIM</option>
+									    <option value="RMIT-SIM">RMIT-SIM</option>
+									    <option value="UOL-SIM">UOL-SIM</option>
+									    <option value="SMU">SMU</option>
+									    <option value="PRIVATE DEGREE">PRIVATE DEGREE</option>
+									    <option value="NP">NP</option>
+									    <option value="NYP">NYP</option>
+									    <option value="SP">SP</option>
+									    <option value="RP">RP</option>
+									    <option value="TP">TP</option>
+									    <option value="PRIVATE DIP">PRIVATE DIP</option>
+									    <option value="HWA CHONG">HWA CHONG JC</option>
+									    <option value="NATIONAL JC">NATIONAL JC</option>
+									    <option value="RAFFLES JC">RAFFLES JC</option>
+									    <option value="TEMASEK JC">TEMASEK JC</option>
+									    <option value="VICTORIA JC">VICTORIA JC</option>
+									    <option value="ANDERSON JC">ANDERSON JC</option>
+									    <option value="ANGLO CHINESE JC">ANGLO CHINESE JC</option>
+									    <option value="CATHOLIC JC">CATHOLIC JC</option>
+									    <option value="JURONG JC">JURONG JC</option>
+									    <option value="MERIDIAN JC">MERIDIAN JC</option>
+									    <option value="NANYANG JC">NANYANG JC</option>
+									    <option value="PIONEER JC">PIONEER JC</option>
+									    <option value="SERANGOON JC">SERANGOON JC</option>
+									    <option value="ST ANDREWS JC">ST ANDREWS JC</option>
+									    <option value="TAMPINES JC">TAMPINES JC</option>
+									    <option value="YISHUN JC">YISHUN JC</option>
+									    <option value="INNOVA JC">INNOVA JC</option>
+									    <option value="MILLEMIUM INSTITUTE">MILLEMIUM INSTITUTE</option>
+									    <option value="PRIVATE">PRIVATE</option>
+									    <option value="OVERSEAS">OVERSEAS</option>
+									    </select></td>
+									  </tr>
+							    <tr>
+							      <td>Faculty (for students)</td>
+									    <td><select name="tutor_faculty_student" tabindex="27" id="tutor_faculty_student">
+									      <option value=""></option>
+									      <option value="arts">ARTS </option>
+									      <option value="business">BUSINESS</option>
+									      <option value="eng">ENGINEERING&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+									      <option value="it">IT</option>
+									      <option value="maths">MATHS</option>
+									      <option value="science">SCIENCE</option>
+									      </select>			</td>  
+										  <td></td>
+										    <td>Year of Study (for students)</td>
+										    <td><select name="tutor_year_of_study_student" tabindex="28" id="tutor_year_of_study_student">
+										      <option value=""></option>
+										      <option value="1">1</option>
+										      <option value="2">2</option>
+										      <option value="3">3</option>
+										      <option value="4">4</option>
+										      <option value="5">5</option>
+										      <option value="6">6</option>
+										      </select></td>  
+										  <!-- <td><input name="tutor_working_experience_student" tabindex="30" value="" size="18" id="tutor_working_experience_student" type="text"></td> -->
+							      </tr>
+							    <tr>
+							      <td>Major in (for students) </td>
+								     <td><input name="tutor_marjor_in_student" tabindex="31" value="" id="tutor_marjor_in_student" size="21" type="text"></td>  <td></td>
+								    <td>Working as(If you are a working adult)</td>
+								     <td colspan="2"><input name="tutor_working_as_at_student" tabindex="32" value="" id="tutor_working_as_at_student" size="25" type="text"></td></tr>
+							  </tbody>
+							</table>
+					    </div>
+					  </div>
+
+					</div>
+					<br/>
+					<div>
+						<div><b>Subjects Interested to teach & Your Academic results</b></div>
+					  <!-- Nav tabs -->
+					  <ul class="nav nav-tabs" role="tablist">
+					    <li role="presentation" class="active"><a href="#Kindergarten" aria-controls="Kindergarten" role="tab" data-toggle="tab">Kindergarten</a></li>
+					    <li role="presentation"><a href="#Primary" aria-controls="Primary" role="tab" data-toggle="tab">Primary</a></li>
+					    <li role="presentation"><a href="#Secondary" aria-controls="Secondary" role="tab" data-toggle="tab">Secondary</a></li>
+					    <li role="presentation"><a href="#College" aria-controls="College" role="tab" data-toggle="tab">Junior College</a></li>
+					    <li role="presentation"><a href="#Courses" aria-controls="Courses" role="tab" data-toggle="tab">Foreign Languages and Other Courses</a></li>
+					  </ul>
+
+					  <!-- Tab panes -->
+					  <div class="tab-content">
+					    <div role="tabpanel" class="tab-pane active" id="Kindergarten">
+					    	<table width="100%" cellpadding="2" cellspacing="2">
+						        <tbody>
+						          <tr>
+						            <td align="left" colspan="2">K1</td>
+								  <td width="440" align="left">K2</td>
+							  </tr>
+						          <tr>
+						            <td width="137"> <input name="tutor_k1_english" value="1" id="subject1" type="checkbox">   English  </td>
+						    		  <td width="48">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</td>
+						              <td><input name="tutor_k2_english" value="1" id="subject2" type="checkbox">English</td>
+						        </tr>
+						          <tr>
+						            <td> <input name="tutor_k1_maths" value="1" id="subject3" type="checkbox">       Maths      </td>
+						      <td>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</td>
+						        <td colspan="2"> <input name="tutor_k2_maths" value="1" id="subject4" type="checkbox">    Maths      </td>
+						        </tr>
+						          <tr>
+						            <td>  <input name="tutor_k1_chinese" value="1" id="subject5" type="checkbox">    Chinese      </td>
+						        <td>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</td>
+						        <td colspan="2">  <input name="tutor_k2_chinese" value="1" id="subject6" type="checkbox">   Chinese      </td>
+						        </tr>
+						       </tbody>
+						    </table>
+					    </div>
+					    <div role="tabpanel" class="tab-pane" id="Primary">
+					    	<table width="100%" border="0" cellpadding="2" cellspacing="2">
+							    <tbody>
+							      <tr>
+							        <td align="left">P1</td>
+								  <td align="left">P2</td>
+								  <td align="left">P3</td>
+								  <td align="left">P4	</td>
+								  <td align="left">P5</td>
+								  <td align="left">P6</td>
+								  </tr>
+							      <tr>
+							        <td height="10">  <input name="tutor_p1_english" value="1" id="tutor_p1_english" type="checkbox"> English</td>
+							      <td><input name="tutor_p2_english" value="1" id="subject7" type="checkbox">English</td>
+							      <td><input name="tutor_p3_english" value="1" id="subject8" type="checkbox"> English</td>
+							      <td><input name="tutor_p4_english" value="1" id="subject9" type="checkbox">English</td>
+							      <td><input name="tutor_p5_english" value="1" id="subject10" type="checkbox">English</td>
+							      <td><input name="tutor_p6_english" value="1" id="subject11" type="checkbox">English</td>
+						      </tr>
+							      <tr>
+							        <td><input name="tutor_p1_maths" value="1" id="subject12" type="checkbox">Maths</td>
+						    	    <td><input name="tutor_p2_maths" value="1" id="subject13" type="checkbox">Maths</td>
+						            <td><input name="tutor_p3_maths" value="1" id="subject14" type="checkbox">  Maths</td>
+							        <td><input name="tutor_p4_maths" value="1" id="subject15" type="checkbox">Maths</td>
+							      <td><input name="tutor_p5_maths" value="1" id="subject16" type="checkbox"> Maths</td>
+						 	      <td><input name="tutor_p6_maths" value="1" id="subject17" type="checkbox"> Maths</td>
+						      </tr>
+							      <tr>
+							        <td><input name="tutor_p1_chinese" value="1" id="subject18" type="checkbox">Chinese</td>
+						          <td><input name="tutor_p2_chinese" value="1" id="subject19" type="checkbox"> Chinese</td>
+						          <td> <input name="tutor_p3_chinese" value="1" id="subject20" type="checkbox"> Chinese</td>
+						          <td> <input name="tutor_p4_chinese" value="1" id="subject21" type="checkbox">   Chinese</td>
+							      <td><input name="tutor_p5_chinese" value="1" id="subject22" type="checkbox">Chinese</td>
+						  	      <td><input name="tutor_p6_chinese" value="1" id="subject23" type="checkbox"> Chinese</td>
+						      </tr>
+							      <tr>
+							        <td height="24"><input name="tutor_p1_tamil" value="1" id="subject24" type="checkbox">   Tamil</td>
+						        <td><input name="tutor_p2_tamil" value="1" id="subject25" type="checkbox"> Tamil</td>
+						         <td> <input name="tutor_p3_tamil" value="1" id="subject26" type="checkbox"> Tamil</td>
+						         <td> <input name="tutor_p4_tamil" value="1" id="subject27" type="checkbox"> Tamil</td>
+							      <td><input name="tutor_p5_tamil" value="1" id="subject28" type="checkbox"> Tamil</td>
+							      <td><input name="tutor_p6_tamil" value="1" id="subject29" type="checkbox"> Tamil</td>
+						      </tr>
+							      <tr>
+							        <td height="24"> <input name="tutor_p1_malay" value="1" id="subject30" type="checkbox">Malay</td>
+						        <td><input name="tutor_p2_malay" value="1" id="subject31" type="checkbox">  Malay</td>
+						         <td>  <input name="tutor_p3_malay" value="1" id="subject32" type="checkbox">  Malay</td>
+						         <td> <input name="tutor_p4_malay" value="1" id="subject33" type="checkbox">Malay</td>
+							      <td><input name="tutor_p5_malay" value="1" id="subject34" type="checkbox"> Malay</td>
+						         <td><input name="tutor_p6_malay" value="1" id="subject35" type="checkbox">Malay</td>     
+						      </tr>
+							      <tr>
+							        <td height="24">&nbsp;</td>
+						        <td>&nbsp;</td>
+						        <td> <input name="tutor_p3_science" value="1" id="subject36" type="checkbox">Science</td>
+						        <td> <input name="tutor_p4_science" value="1" id="subject37" type="checkbox"> Science      </td>
+						        <td> <input name="tutor_p5_science" value="1" id="subject38" type="checkbox"> Science      </td>
+						        <td> <input name="tutor_p6_science" value="1" id="subject39" type="checkbox"> Science      </td>
+						      </tr>
+							      </tbody></table>
+					    </div>
+					    <div role="tabpanel" class="tab-pane" id="Secondary">
+					    	<table width="100%" cellpadding="2" cellspacing="2">
+						      <tr>
+						        <td colspan="2">Sec1</td>
+								  <td colspan="2">Sec2</td>
+								  <td colspan="2">Sec3</td>
+								  <td colspan="3">Sec4</td>
+							 </tr>
+						      
+						      <tr>
+						        <td colspan="2"><input name="tutor_sec1_english" value="1" id="subject40" type="checkbox">English</td>
+					             <td colspan="2"><input name="tutor_sec2_english" value="1" id="subject41" type="checkbox">English</td>
+					            <td colspan="2"><input name="tutor_sec3_english" value="1" id="subject42" type="checkbox">English</td>
+					            <td><input name="tutor_sec4_english" value="1" id="subject43" type="checkbox">English</td>
+					            <td>SEC English Grade</td>
+							      <td><input name="tutor_sec_eng_grade" id="subject44" type="text" size="5"></td>
+					            </tr>
+						      <tr>
+						        <td colspan="2"><input name="tutor_sec1_emaths" value="1" id="subject45" type="checkbox">E Maths</td>
+					           <td colspan="2"><input name="tutor_sec2_emaths" value="1" id="subject46" type="checkbox">E Maths</td>
+							    <td colspan="2"><input name="tutor_sec3_emaths" value="1" id="subject47" type="checkbox">E Maths</td>
+							     <td><input name="tutor_sec4_emaths" value="1" id="subject48" type="checkbox">E Maths</td>
+					            <td>SEC EMaths Grade</td> <td><input name="tutor_sec_emaths_grade" id="subject49" type="text" size="5"></td>
+					            </tr>
+						      
+						      <tr>
+						        <td colspan="2"><input name="tutor_sec1_comsc" value="1" id="subject50" type="checkbox">Comb Sc</td>
+					           <td colspan="2"><input name="tutor_sec2_comsc" value="1" id="subject51" type="checkbox">Comb Sc</td>
+							    <td colspan="2"><input name="tutor_sec3_comsc" value="1" id="subject52" type="checkbox">Comb Sc</td>
+							     <td><input name="tutor_sec4_comsc" value="1" id="subject53" type="checkbox">Comb Sc</td>
+						           <td>SEC Comp Sc Grade</td> <td><input name="tutor_sec_consc_grade" id="subject54" type="text" size="5"></td>
+					            </tr>
+						      
+						      <tr>
+						        <td colspan="2"><input name="tutor_sec1_chinese" value="1" id="subject55" type="checkbox">Chinese</td>
+					           <td colspan="2"><input name="tutor_sec2_chinese" value="1" id="subject56" type="checkbox">Chinese</td>
+							    <td colspan="2"><input name="tutor_sec3_chinese" value="1" id="subject57" type="checkbox">Chinese</td>
+							     <td><input name="tutor_sec4_chinese" value="1" id="subject58" type="checkbox">Chinese</td>   
+					  
+					          <td>SEC Chinese Grade</td> <td><input name="tutor_sec_chinese_grade" id="subject59" type="text" size="5"></td>
+					            </tr>
+						      
+						      
+						      <tr>
+						        <td colspan="2"><input name="tutor_sec1_history" value="1" id="subject60" type="checkbox">History</td>
+					           <td colspan="2"><input name="tutor_sec2_history" value="1" id="subject61" type="checkbox">History</td>
+							    <td colspan="2"><input name="tutor_sec3_history" value="1" id="subject62" type="checkbox">History</td>
+							     <td><input name="tutor_sec4_history" value="1" id="subject63" type="checkbox">History</td>    
+					            
+					          <td>SEC History Grade</td>  <td><input name="tutor_sec_history_grade" id="subject64" type="text" size="5"></td>
+					            </tr>
+						      
+						      <tr>
+						        <td colspan="2"><input name="tutor_sec1_geo" value="1" id="subject65" type="checkbox">Geography</td>
+					           <td colspan="2"><input name="tutor_sec2_geo" value="1" id="subject66" type="checkbox">Geography</td>
+							    <td colspan="2"><input name="tutor_sec3_geo" value="1" id="subject67" type="checkbox">Geography</td>
+							     <td><input name="tutor_sec4_geo" value="1" id="subject68" type="checkbox">Geography</td>           	 
+					             <td>SEC Geography Grade</td>  <td><input name="tutor_sec_geo_grade" id="subject69" type="text" size="5"></td>
+					            </tr>
+						      
+						      <tr>
+						        <td colspan="2"><input name="tutor_sec1_lit" value="1" id="subject70" type="checkbox">Literature</td>
+					           <td colspan="2"><input name="tutor_sec2_lit" value="1" id="subject71" type="checkbox">Literature</td>
+							    <td colspan="2"><input name="tutor_sec3_lit" value="1" id="subject72" type="checkbox">Literature</td>
+							     <td><input name="tutor_sec4_lit" value="1" id="subject73" type="checkbox">Literature</td>           	 
+					            <td>SEC Literature Grade</td>   <td><input name="tutor_sec_lit_grade" id="subject74" type="text" size="5"></td>
+					            </tr>
+						      
+						      <tr>
+						        <td colspan="2"><input name="tutor_sec1_malay" value="1" id="subject75" type="checkbox">Malay</td>
+					           <td colspan="2"><input name="tutor_sec2_malay" value="1" id="subject76" type="checkbox">Malay</td>
+							    <td colspan="2"><input name="tutor_sec3_malay" value="1" id="subject77" type="checkbox">Malay</td>
+							     <td><input name="tutor_sec4_malay" value="1" id="subject78" type="checkbox">Malay</td>           	 
+					       
+					          <td>SEC Malay Grade</td> <td><input name="tutor_sec_malay_grade" id="subject79" type="text" size="5"></td>
+					            </tr>
+						      
+						      <tr>
+						        <td colspan="2"><input name="tutor_sec1_tamil" value="1" id="subject80" type="checkbox">Tamil</td>
+					           <td colspan="2"><input name="tutor_sec2_tamil" value="1" id="subject81" type="checkbox">Tamil</td>
+							    <td colspan="2"><input name="tutor_sec3_tamil" value="1" id="subject82" type="checkbox">Tamil</td>
+							     <td><input name="tutor_sec4_tamil" value="1" id="subject83" type="checkbox">Tamil</td>           	 
+					     
+					          <td>SEC Tamil Grade</td>   <td><input name="tutor_sec_tamil_grade" id="subject84" type="text" size="5"></td>
+					            </tr>
+						      
+						      <tr>
+						        <td colspan="2"><input name="tutor_sec1_amaths" value="1" id="subject85" type="checkbox">A Maths</td>
+					           <td colspan="2"><input name="tutor_sec2_amaths" value="1" id="subject86" type="checkbox">A Maths</td>
+							    <td colspan="2"><input name="tutor_sec3_amaths" value="1" id="subject87" type="checkbox">A Maths</td>
+							     <td><input name="tutor_sec4_amaths" value="1" id="subject88" type="checkbox">A Maths</td>           	 
+					     
+					            <td>SEC AMaths Grade</td>
+							      <td><input name="tutor_sec_amaths_grade" id="subject89" type="text" size="5"></td>
+					            </tr>
+						      
+						      <tr>
+						        <td>&nbsp;</td>
+					            <td>&nbsp;</td>
+					            <td colspan="2">&nbsp;</td>
+					    	    <td colspan="2"><input name="tutor_sec3_physics" value="1" id="subject90" type="checkbox">Physics</td>
+					             <td><input name="tutor_sec4_physics" value="1" id="subject91" type="checkbox">Physics</td>
+							    <td>SEC Physics Grade</td>
+							       <td><input name="tutor_sec_physics_grade" id="subject92" type="text" size="5"></td>
+					            </tr>
+						      
+						      <tr>
+						        <td>&nbsp;</td>
+					            <td>&nbsp;</td>
+					            <td colspan="2">&nbsp;</td>
+					    	    <td colspan="2"><input name="tutor_sec3_chemistry" value="1" id="subject93" type="checkbox">Chemistry</td>
+					             <td><input name="tutor_sec4_chemistry" value="1" id="subject94" type="checkbox">Chemistry</td>
+							    <td>SEC Chemistry Grade</td>
+							       <td><input name="tutor_sec_chemistry_grade" id="subject95" type="text" size="5"></td>
+					            </tr>
+						      
+						      
+						      <tr>
+						        <td>&nbsp;</td>
+					            <td>&nbsp;</td>
+					            <td colspan="2">&nbsp;</td>
+					    	    <td colspan="2"><input name="tutor_sec3_biology" value="1" id="subject96" type="checkbox">Biology</td>
+					             <td><input name="tutor_sec4_biology" value="1" id="subject97" type="checkbox">Biology</td>
+							    <td>SEC Biology Grade</td>
+							       <td><input name="tutor_sec_biology_grade" id="subject98" type="text" size="5"></td>
+					            </tr>
+						      
+						      
+						      
+						      <tr>
+						        <td>&nbsp;</td>
+					            <td>&nbsp;</td>
+					            <td colspan="2">&nbsp;</td>
+					    	    <td colspan="2"><input name="tutor_sec3_accounts" value="1" id="subject99" type="checkbox">Accounts</td>
+					             <td><input name="tutor_sec4_accounts" value="1" id="subject100" type="checkbox">Accounts</td>
+							    <td>SEC Accounts Grade</td>
+							       <td><input name="tutor_sec_accounts_grade" id="subject101" type="text" size="5"></td>
+					            </tr>
+						      </tbody>
+						    </table>	    <tbody>
+					    </div>
+					    <div role="tabpanel" class="tab-pane" id="College">
+					    	<table border="0" width="100%" cellpadding="2" cellspacing="2">
+							    <tbody>
+							      <tr>
+							        <td align="left" width="150">JC1</td>
+								  <td align="left" width="150">JC2</td>
+								  <td align="left" width="180">&nbsp;</td>
+								  <td align="left">&nbsp;</td>
+							    </tr>
+							      
+							      <tr>
+							        <td><input name="tutor_jc1_gp" value="1" id="subject102" type="checkbox">GP</td>
+						    	     <td><input name="tutor_jc2_gp" value="1" id="subject103" type="checkbox">GP</td>
+						    	    <td>JC GP Grade</td>
+						            <td><input name="tutor_jc_gp_grade" size="5" tabindex="51" value="" id="subject104" type="text"></td>   
+						        </tr>
+							      
+							      <tr>
+							        <td><input name="tutor_jc1_h2maths" value="1" id="subject105" type="checkbox">H2 Maths</td>
+						    	     <td><input name="tutor_jc2_h2maths" value="1" id="subject106" type="checkbox">H2 Maths</td>
+						    	    <td>JC C Maths Grade</td>
+						            <td><input name="tutor_jc_h2maths" size="5" tabindex="51" value="" id="subject107" type="text"></td>   
+						        </tr>
+							      
+							      <tr>
+							        <td><input name="tutor_jc1_h3maths" value="1" id="subject108" type="checkbox">H3 Maths</td>
+						    	     <td><input name="tutor_jc2_h3maths" value="1" id="subject109" type="checkbox">H3 Maths</td>
+						    	    <td>JC F Maths Grade</td>
+						            <td><input name="tutor_jc_h3maths" size="5" tabindex="51" value="" id="tutor_jc_h3maths" type="text"></td>   
+						        </tr>
+							      
+							      <tr>
+							        <td><input name="tutor_jc1_physics" value="1" id="subject110" type="checkbox">Physics</td>
+						    	     <td><input name="tutor_jc2_physics" value="1" id="subject111" type="checkbox">Physics</td>
+						    	    <td>JC Physics Grade</td>
+						            <td><input name="tutor_jc_physics" size="5" tabindex="51" value="" id="tutor_jc_physics" type="text"></td>   
+						        </tr>
+							      
+							      <tr>
+							        <td><input name="tutor_jc1_chemistry" value="1" id="subject112" type="checkbox">Chemistry</td>
+						    	     <td><input name="tutor_jc2_chemistry" value="1" id="subject113" type="checkbox">Chemistry</td>
+						    	    <td>JC Chemistry Grade</td>
+						            <td><input name="tutor_jc_chemistry" size="5" tabindex="51" value="" id="subject114" type="text"></td>   
+						        </tr>
+							      <tr>
+							        <td><input name="tutor_jc1_biology" value="1" id="subject115" type="checkbox">Biology</td>
+						    	     <td><input name="tutor_jc2_biology" value="1" id="subject116" type="checkbox">Biology</td>
+						    	    <td>JC Biology Grade</td>
+						            <td><input name="tutor_jc_biology" size="5" tabindex="51" value="" id="tutor_jc_biology" type="text"></td>   
+						        </tr>      <tr>
+						          <td><input name="tutor_jc1_econs" value="1" id="subject117" type="checkbox">Econs</td>
+						    	     <td><input name="tutor_jc2_econs" value="1" id="subject118" type="checkbox">Econs</td>
+						    	    <td>JC Econs Grade</td>
+						            <td><input name="tutor_jc_econs" size="5" tabindex="51" value="" id="tutor_jc_econs" type="text"></td>   
+						        </tr>      <tr>
+						          <td><input name="tutor_jc1_chinese" value="1" id="subject119" type="checkbox">Chinese</td>
+						    	     <td><input name="tutor_jc2_chinese" value="1" id="subject120" type="checkbox">Chinese</td>
+						    	    <td>JC Chinese Grade</td>
+						            <td><input name="tutor_jc_chinese" size="5" tabindex="51" value="" id="subject121" type="text"></td>   
+						        </tr>      <tr>
+						          <td><input name="tutor_jc1_geography" value="1" id="subject122" type="checkbox">Geography</td>
+						    	     <td><input name="tutor_jc2_geography" value="1" id="subject123" type="checkbox">Geography</td>
+						    	    <td>JC Geography Grade</td>
+						            <td><input name="tutor_jc_geography" size="5" tabindex="51" value="" id="subject124" type="text"></td>   
+						        </tr>
+							      
+							      
+							      <tr>
+							        <td><input name="tutor_jc1_literature" value="1" id="subject125" type="checkbox">Literature</td>
+						    	     <td><input name="tutor_jc2_literature" value="1" id="subject126" type="checkbox">Literature</td>
+						    	    <td>JC Literature Grade</td>
+						            <td><input name="tutor_jc_literature" size="5" tabindex="51" value="" id="tutor_jc_literature" type="text"></td>   
+						        </tr>      <tr>
+						          <td><input name="tutor_jc1_tamil" value="1" id="subject127" type="checkbox">Tamil</td>
+						    	     <td><input name="tutor_jc2_tamil" value="1" id="subject128" type="checkbox">Tamil</td>
+						    	    <td>JC Tamil Grade</td>
+						            <td><input name="tutor_jc_tamil" size="5" tabindex="51" value="" id="tutor_jc_tamil" type="text"></td>   
+						        </tr>
+							      <tr>
+							        <td><input name="tutor_jc1_malay" value="1" id="subject129" type="checkbox">Malay</td>
+						    	     <td><input name="tutor_jc2_malay" value="1" id="subject130" type="checkbox">Malay</td>
+						    	    <td>JC Malay Grade</td>
+						            <td><input name="tutor_jc_malay" size="5" tabindex="51" value="" id="subject131" type="text"></td>   
+						        </tr>
+							      </tbody>
+						  </table>
+					    </div>
+					    <div role="tabpanel" class="tab-pane" id="Courses">
+					    	<table width="100%" cellpadding="2" cellspacing="2">
+							    <tbody>
+							      <tr>
+							        <td width="167"><input name="tutor_lcci_account" value="1" id="subject132" type="checkbox">      German Language</td>
+						       <td width="37">&nbsp;</td>
+							   <td width="167"><input name="tutor_adult_eng" value="1" id="subject133" type="checkbox">     French Language</td>
+						       <td width="37">&nbsp;</td>
+							   <td width="167"><input name="tutor_computer" value="1" id="subject134" type="checkbox">      Spanish Language  </td>
+						       <td width="37">&nbsp;</td>
+							   <td width="167"><input name="tutor_jap_lang" value="1" id="subject135" type="checkbox">      Jap Language</td>
+						       <td width="37">&nbsp;</td>
+							 </tr>
+							      <tr>
+							        <td width="167"><input name="tutor_piano" value="1" id="subject136" type="checkbox">      Piano</td>
+						       <td width="37">&nbsp;</td>
+						 	  <td width="167"><input name="tutor_organ" value="1" id="subject137" type="checkbox">      Organ</td>
+						       <td width="37">&nbsp;</td>
+							    <td width="167"><input name="tutor_guitar" value="1" id="subject138" type="checkbox">      Guitar</td>
+						       <td width="37">&nbsp;</td>
+							    <td width="167"><input name="tutor_violin" value="1" id="subject139" type="checkbox">      Violin</td>
+						       <td width="37">&nbsp;</td>
+							 </tr>
+							      </tbody></table>
+					    </div>
+					  </div>
+
+					  <br/>
+
+					  <div>
+					  	Describe yourself-Tell  parents and students about yourself such as  
+			              your teaching styles, Hobbies and CCA's in school, your strengths and  
+			              weakness, corporate working experience, previous and current teaching or tutoring  
+			              experience etc and why they should engage you as their tutor.  
+			              <div>
+			              	<textarea name="Describe_yourself_short_" label="" cols="60" rows="10" tabindex="36" id="Describe_yourself_short_" data-gramm="true" data-txt_gramm_id="50bacff0-24a7-6fa4-6088-e0a30cee66ed" data-gramm_id="50bacff0-24a7-6fa4-6088-e0a30cee66ed" spellcheck="false" data-gramm_editor="true" style="z-index: auto; position: relative; line-height: normal; font-size: 13.3333px; transition: none; background: transparent !important;"></textarea>
+			              </div>
+			              <div class="clear"></div>
+					  </div>
+
+					  <br/>
+					  <div>
+					  	<div style="float:left">Attach your Photo &nbsp;&nbsp;&nbsp;</div>
+					  	<input type="file" style="float:left"/>
+					  	<div class="clear"></div>
+					  </div>
+
+					  <br/>
+					  <div>
+					  	<input type="checkbox" style="float:left"/>
+					  	<div style="float:left"> &nbsp;&nbsp;&nbsp; I have read terms and conditions</div>
+					  	<div class="clear"></div>
+					  </div>
+
+					  <br/>
+					  <p>
+					  	50 % commission would be charge for the first month tuition fee and you hereby agrees to tutor students that you are going to apply to teach for a minimum period of 1 month. In the event your service is being terminated by the student before 1 month, 50 % of the pro rated tuition fee of whatever lessons you have rendered would be paid to you. Any cancellation that results in a loss of commission after accepting a tuition assignment shall be borne by you. However, you are allowed to cancel a tuition assignment application before the student has confirmed taking you as the tutor. Any frequent unpunctuality or frequent changing of tuition lessons (define by agency as 3 times or more in a month) which results in a loss of commission shall be borne by you. After the 1 month contract period, you are to inform Star Zest Tuition Agency at any point of time if you would like to stop teaching the student so that there would be sufficient time to get a replacement for the student. One week notice is required if you wolud like to stop tuition a tutor or 1 week's fee in lieu of notice. Star Zest Tuition Agency will also charge 50% commission on the first month tuition fee for any students referred to you by the parents. The above terms and conditions may be voidable on a case-case basis due to unforeseeable situations . Eg. Due to medical conditions. You will need to provide supporting documents if such situation arises.
+					  </p>
+					  <a href="#" data-type="submit" class="btn" style="float:right">Register</a>
+					</div>
+
+        		</form>
 			</div>
 		</div>
 <!--==============================footer=================================-->
