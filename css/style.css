@@ -17,6 +17,10 @@ a[href^="tel:"] {
  text-decoration: none;
 }
 
+.pointer{
+    cursor: pointer;
+}
+
 * {
 	-webkit-text-size-adjust: none;
 }
@@ -211,6 +215,7 @@ a {
 	transition: 0.5s ease;
 	-o-transition: 0.5s ease;
 	-webkit-transition: 0.5s ease;
+    cursor: pointer;
 }
 
 a:hover {
@@ -229,6 +234,15 @@ a.btn {
 
 a.btn:hover {
     background-color: #E14F42;
+}
+
+a.bigBtn{
+    width: 250px;
+    height: 35px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 35px;
+    cursor: pointer;
 }
 
 /****classes****/

@@ -4,6 +4,21 @@
 	padding-top: 14px;
 }
 
+#form select{
+	width: 100%;
+	height: 28px;
+	border: 1px solid #cecece;
+	background: #fefefe;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box; /*Firefox 1-3*/
+	-webkit-box-sizing: border-box; /* Safari */
+	color: #838181;
+    font: italic 14px/24px 'Open Sans', sans-serif;
+    padding: 0px 11px 4px;
+    margin-top:10px;
+    text-align:center;
+}
+
 #form input {
 	width: 100%;
 	height: 28px;
