@@ -245,6 +245,16 @@ a.bigBtn{
     cursor: pointer;
 }
 
+a.midBtn{
+    width: 105px;
+    height: 25px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 25px;
+    cursor: pointer;
+    margin-top:5px;
+}
+
 /****classes****/
 
 .mb0 {
@@ -747,3 +757,78 @@ a.loginBtn{
     margin-left:5px;
     text-align: center;
 }
+
+#requestTutorClass li, #locationList li{
+    float:left;
+    padding:5px;
+}
+
+.tag-success{
+    color: #fff;
+    background-color: #449d44;
+    border-color: #398439;
+}
+
+.tag-info{
+    color: #fff;
+    background-color: #31b0d5;
+    border-color: #269abc;
+}
+
+.tag-warning{
+    background-color: #f0ad4e;
+}
+
+.tag{
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+
+.tutorLeftInfo img{
+    border: 1px solid #888;
+}
+
+.tutorInfo{
+    margin-top:10px;
+}
+
+.tutorInfo>li{
+    margin-top:10px;
+    padding-top:10px;
+    border-bottom: 1px solid #888;
+}
+
+.tutorCommandList{
+    list-style-type: square;
+}
+
+.compareWrapper{
+    margin-top:20px;
+}
+
+.compareWrapper>li{
+    float:left;
+    width:28%;
+    border: 1px solid #888;
+    margin:0 20px;
+    text-align: center;
+}
+
+.compareWrapper>li img{
+    max-width:150px;
+    max-height:150px;
+}
+
+.compareListSubjuct{
+    text-align: center;
+    padding:0 5px;
+}
+

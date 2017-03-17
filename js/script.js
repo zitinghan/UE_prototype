@@ -32,6 +32,40 @@ $(function(){
    })
   }
  }
+
+
+ $("#index_parent_post_select_level").change(function(){
+  
+  if(this.value=='Primary 1'){
+    var html = '';
+    html+='<li><input id="chkid2" name="chkid2" type="checkbox" value="English"> English</li>';
+    html+='<li><input id="chkid2" name="chkid2" type="checkbox" value="English"> Chinese</li>';
+    html+='<li><input id="chkid2" name="chkid2" type="checkbox" value="Maths"> Maths</li>';
+    html+='<li><input id="chkid2" name="chkid2" type="checkbox" value="Science"> Science</li>';
+    html+='<li><input id="chkid2" name="chkid2" type="checkbox" value="Malay"> Malay</li>';
+    html+='<li><input id="chkid2" name="chkid2" type="checkbox" value="Tamil"> Tamil</li>';
+    html+='<li><input id="chkid2" name="chkid2" type="checkbox" value="Piano"> Piano</li>';
+    html+='<li><input id="chkid2" name="chkid2" type="checkbox" value="JAP LANGUAGE"> JAP LANGUAGE</li>';
+    html+='<li><input id="chkid2" name="chkid2" type="checkbox" value="violin"> Violin</li>';
+    
+  }else if(this.value=='Secondary 1'){
+    var html = '';
+    html+='<li><input id="chkid2" name="chkid2" type="checkbox" value="English"> English</li>';
+    html+='<li><input id="chkid2" name="chkid2" type="checkbox" value="English"> Chinese</li>';
+    html+='<li><input id="chkid2" name="chkid2" type="checkbox" value="Maths"> H1 MATH</li>';
+    html+='<li><input id="chkid2" name="chkid2" type="checkbox" value="Science"> Science</li>';
+    html+='<li><input id="chkid2" name="chkid2" type="checkbox" value="Malay"> Malay</li>';
+    html+='<li><input id="chkid2" name="chkid2" type="checkbox" value="Tamil"> Tamil</li>';
+    html+='<li><input id="chkid2" name="chkid2" type="checkbox" value="computer"> Computer</li>';
+    html+='<li><input id="chkid2" name="chkid2" type="checkbox" value="hip_hop_dancing"> Hip Hop Dancing</li>';
+  }
+  console.log(this.value);
+  $("#requestTutorClass").html(html);
+ })
+
+
+
+
 });
 var ua=navigator.userAgent.toLocaleLowerCase(),
  regV = /ipod|ipad|iphone/gi,
