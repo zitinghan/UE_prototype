@@ -62,8 +62,28 @@ $(function(){
   console.log(this.value);
   $("#requestTutorClass").html(html);
  })
+         
 
+ var menuHtml = '';
+ menuHtml += '<li class="current"><a href="index.html">Home</a></li>';
+ menuHtml += '<li><a href="index-1.html">Request Tutor</a></li>';
+ menuHtml += '<li><a href="job_post.html">Job Post</a></li>';
+ menuHtml += '<li><a href="index-2.html">Our Tutors</a></li>';
+ menuHtml += '<li><a href="article.html">Article</a></li>';
+ menuHtml += '<li><a href="foreign_student.html">Foreign Student Service</a></li>';
+ menuHtml += '<li><a href="index-4.html">Contacts</a></li>';
+ $('.login_menu').append(menuHtml);
 
+            
+ var notLogin_menuHtml = '';
+ notLogin_menuHtml += '<li class="current"><a href="index.html">Home</a></li>';
+ notLogin_menuHtml += '<li><a href="#" title="Please login before you can post request">Request Tutor</a></li>';
+ notLogin_menuHtml += '<li><a href="#" title="Please login before you can see all the request">Job Post</a></li>';
+ notLogin_menuHtml += '<li><a href="index-2.html">Our Tutors</a></li>';
+ notLogin_menuHtml += '<li><a href="article.html">Article</a></li>';
+ notLogin_menuHtml += '<li><a href="foreign_student.html">Foreign Student Service</a></li>';
+ notLogin_menuHtml += '<li><a href="index-4.html">Contacts</a></li>';
+ $('.not_login_menu').append(notLogin_menuHtml);
 
 
 });
@@ -84,3 +104,4 @@ var currentYear = (new Date).getFullYear();
   $(function(){
   $('.sf-menu').superfish({autoArrows: true})
 })
+

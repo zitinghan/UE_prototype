@@ -68,6 +68,10 @@ img {
 	max-width: 100%;
 }
 
+.text-right{
+    text-align: right;
+}
+
 
 
 /****Heads****/
@@ -381,7 +385,7 @@ a.donate:hover {
 /**Content**/
 
 .content {
-    padding-bottom: 89px;
+    padding-bottom: 30px;
 }
 
 .page1 .content {
@@ -831,4 +835,30 @@ a.loginBtn{
     text-align: center;
     padding:0 5px;
 }
+
+.chromeIcon{
+    width:20px;
+}
+
+.paginationImg{
+    text-align: right;
+    padding-top:10px;
+}
+
+#postJobTbl{
+    width:100%;
+    border:1px solid #999;
+}
+
+#postJobTbl td{
+    height:30px;
+    line-height: 30px;
+    border:1px solid #999;
+    padding:5px;
+}
+
+.jobDialog{
+    width:800px;
+}
+
 

@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Our Tutors</title>
+		<meta charset="utf-8">
+		<meta name = "format-detection" content = "telephone=no" />
+		<!-- <link rel="icon" href="images/favicon.ico">
+		<link rel="shortcut icon" href="images/favicon.ico" /> -->
+		<link rel="stylesheet" href="css/form.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/jquery-ui.min.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-migrate-1.2.1.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/superfish.js"></script>
+		<script src="js/sForm.js"></script>
+		<script src="js/jquery.ui.totop.js"></script>
+		<script src="js/jquery.equalheights.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script>
+		$(document).ready(function(){
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			});
+		</script>
+		<!--[if lt IE 8]>
+		<div style=' clear: both; text-align:center; position: relative;'>
+			<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+			<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+			</a>
+		</div>
+		<![endif]-->
+		<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<link rel="stylesheet" media="screen" href="css/ie.css">
+		<![endif]-->
+	</head>
+	<body class="" id="top">
+<!--==============================header=================================-->
+		<header>
+			<div class="container_12">
+				<div class="grid_12">
+					<h1>
+						<a href="index.html">
+							<img src="images/hometuitionagency.png" alt="Logo">
+						</a>
+					</h1>
+					<div class="menu_block ">
+						<div style="float:right">Greeting! Life is Great</div>
+						<div class="clear"></div>
+						<nav class="horizontal-nav full-width horizontalNav-notprocessed">
+							<ul class="sf-menu login_menu"></ul>
+						</nav>
+						<div class="clear" style="padding-top:10px"></div>
+					</div>
+				</div>
+			</div>
+		</header>
+<!--==============================Content=================================-->
+		<div class="content">
+			<div class="container_12">
+				<form id="form">
+					<div class="grid_2">
+						<h5>Level</h5>
+						<select name="index_parent_post_select_level" id="index_parent_post_select_level">
+	  						<option value="" selected="selected">Select level</option>
+							<option value="Pre School">Pre School</option>
+							<option value="Nursery 1">Nursery 1</option>
+							<option value="Nursery 2">Nursery 2</option>
+							<option value="Kindergarten 1">Kindergarten 1</option>
+							<option value="Kindergarten 2"> Kindergarten 2</option>
+							<option value="Primary 1"> Primary 1</option>
+							<option value="Primary 2">Primary 2</option>
+							<option value="Primary 3">Primary 3</option>
+							<option value="Primary 4">Primary 4</option>
+							<option value="Primary 5">Primary 5</option>
+							<option value="Primary 6"> Primary 6</option>
+							<option value="Secondary 1">Secondary 1</option>
+							<option value="Secondary 2">Secondary 2</option>
+							<option value="Secondary 3">Secondary 3</option>
+							<option value="Secondary 4">Secondary 4</option>
+							<option value="N level">N level</option>
+							<option value="O level"> O level</option>
+							<option value="Junior College 1">Junior College 1</option>
+							<option value="Junior College 2">Junior College 2</option>
+							<option value="Pre U 1">Pre U 1</option>
+							<option value="Pre U 2"> Pre U 2</option>
+							<option value="Pre U 3"> Pre U 3</option>
+							<option value="Diploma">Diploma</option>
+							<option value="Degree">Degree</option>
+							<option value="Grade 1">Grade 1</option>
+							<option value="Grade 2">Grade 2</option>
+							<option value="Grade 3">Grade 3</option>
+							<option value="Grade 4">Grade 4</option>
+							<option value="Grade 5">Grade 5</option>
+							<option value="Grade 6">Grade 6</option>
+							<option value="Grade 7">Grade 7</option>
+							<option value="Grade 8">Grade 8</option>
+							<option value="Grade 9">Grade 9</option>
+							<option value="Grade 10">Grade 10</option>
+							<option value="Grade 11">Grade 11</option>
+							<option value="Grade 12">Grade 12</option>
+							<option value="IB Diploma">IB Diploma</option>
+							<option value="Test Preparation">Test Preparation</option>
+							<option value="Computer Subjects">Computer Subjects</option>
+							<option value="Languages"> Languages</option>
+							<option value="Music classes"> Music classes</option>
+							<option value="Dance classes"> Dance classes</option>
+							<option value="Arts &amp; hobbies"> Arts &amp; hobbies</option>
+							<option value="Sports training">Sports training</option>
+							<option value="Basic">Basic</option>
+							<option value="Intermediate">Intermediate</option>
+							<option value="Advance">Advance</option>
+							<option value="Others">Others</option>
+							<option value="SAT">SAT</option>
+						</select>
+					</div>
+					<div class="grid_5">
+						<h5>Subject</h5>
+						<ul class="checklist" id="requestTutorClass"></ul>
+						<div class="clear"></div>
+					</div>
+					<div class="grid_3">
+						<h5>Nearest MRT</h5>
+						<select name="tutor_nearest_mrt" tabindex="17" id="tutor_nearest_mrt">
+				              <option value="" selected="selected">-</option>
+				              <option value="E1(bugis)">E1(bugis)</option>
+				              <option value="E2(lavender)">E2(lavender)</option>
+				              <option value="E3(kallang)">E3(kallang)</option>
+				              <option value="E4(ajunied)">E4(ajunied)</option>
+				              <option value="E5(paya lebar)">E5(paya lebar)</option>
+				              <option value="E6(eunos)">E6(eunos)</option>
+				              <option value="E7(kembangan)">E7(kembangan)</option>
+				              <option value="E8(bedok)">E8(bedok)</option>
+				              <option value="E9(tanah merah)">E9(tanah merah)</option>
+				              <option value="E10(simei)">E10(simei)</option>
+				              <option value="E11(tampines)">E11(tampines)</option>
+				              <option value="E12(pasir ris)">E12(pasir ris)</option>
+				              <option value="W1(tanjong pagar)">W1(tanjong pagar)</option>
+				              <option value="W2(outram park)">W2(outram park)</option>
+				              <option value="W3(tiong bahru)">W3(tiong bahru)</option>
+				              <option value="W4(redhill)">W4(redhill)</option>
+				              <option value="W5(queenstown)">W5(queenstown)</option>
+				              <option value="W6(commonwealth)">W6(commonwealth)</option>
+				              <option value="W7(buona vista)">W7(buona vista)</option>
+				              <option value="W8(clementi)">W8(clementi)</option>
+				              <option value="W9(jurong east)">W9(jurong east)</option>
+				              <option value="W11(lakeside)">W11(lakeside)</option>
+				              <option value="W12(jurong west)">W12(jurong west)</option>
+				              <option value="N1(dhoby ghaut)">N1(dhoby ghaut)</option>
+				              <option value="N2(somerset)">N2(somerset)</option>
+				              <option value="N3(orchard)">N3(orchard)</option>
+				              <option value="N4(newton)">N4(newton)</option>
+				              <option value="N5(novena)">N5(novena)</option>
+				              <option value="N6(toa payoh)">N6(toa payoh)</option>
+				              <option value="N8(bishan)">N8(bishan)</option>
+				              <option value="N9(amk)">N9(amk)</option>
+				              <option value="N10(yio chu kang)">N10(yio chu kang)</option>
+				              <option value="N11(khatib)">N11(khatib)</option>
+				              <option value="N12(yishun)">N12(yishun)</option>
+				              <option value="N14(sembawang)">N14(sembawang)</option>
+				              <option value="N15(admiralty)">N15(admiralty)</option>
+				              <option value="N16(woodland)">N16(woodland)</option>
+				              <option value="N16(marsiling)">N17(marsiling)</option>
+				              <option value="N21(choa chu kang)">N21(choa chu kang)</option>
+				              <option value="N22(bukit panjang)">N22(bukit panjang)</option>
+				              <option value="N23(bukit batok)">N23(bukit batok)</option>
+				              <option value="Balestier">Balestier</option>
+				              <option value="Bendemeer">Bendemeer</option>
+				              <option value="StGeorge">StGeorge</option>
+				              <option value="LittleIndia">LittleIndia</option>
+				              <option value="FarrerPark">FarrerPark</option>
+				              <option value="BoonKeng">BoonKeng</option>			  
+				              <option value="PotongPasir">PotongPasir</option>
+				              <option value="Serangoon">Serangoon</option>
+				              <option value="Hougang">Hougang</option>
+				              <option value="SengKang">SengKang</option>
+				              <option value="Buangkok">Buangkok</option>
+				              <option value="Punggol">Punggol</option>
+				        </select>
+					</div>
+					<div class="grid_2">
+						<h5>By Job ID</h5>
+						<input type="textbox" style="margin-top:10px" placeholder="ID Search">
+						<a href="#" class="btn midBtn">ID Search</a>
+					</div>
+					
+				</form>
+				
+			</div>
+			<div class="hor" style="padding-top:10px"></div>
+			<br/>
+			<div class="container_12">
+				<table class="table" id="postJobTbl">
+				    <tbody>
+					    <tr style="color:#FFFFFF; background-color:#999999; font-weight:bold">
+					    <td><div>Job ID</div></td>
+					    <td><div>Level</div></td>
+					    <td style="width:15%"><div>Subj 1</div></td>
+					    <td style="width:15%"><div>Subj 2</div></td>
+					    <td style="width:15%"><div>Subj 3</div></td>
+						<td><div>Nearest MRT</div></td>
+						<td><div>Fee</div></td>
+						<td><div>Apply</div></td>
+					  </tr>
+
+				   	 <tr>
+				    <td>74889</td>
+				    <td>Primary 5</td>
+				    <td>MATH</td>
+				    <td>SCIENCE</td>
+				    <td></td>
+				    <td></td>
+				    <td>$230</td>
+				    <td>
+							<a class="viewDetails">View Details</a>	</td>
+					 </tr>
+
+					   	 <tr>
+				    <td>74887</td>
+				    <td>Secondary 2</td>
+				    <td>SCIENCE</td>
+				    <td></td>
+				    <td></td>
+				    <td>N9(amk)</td>
+				    <td></td>
+				    <td>
+							<a class="viewDetails">View Details</a>	</td>
+					 </tr>
+
+					   	 <tr>
+				    <td>74885</td>
+				    <td>Secondary 2</td>
+				    <td>SCIENCE</td>
+				    <td></td>
+				    <td></td>
+				    <td>W3(tiong bahru)</td>
+				    <td></td>
+				    <td>
+							<a class="viewDetails">View Details</a>	</td>
+					 </tr>
+
+					   	 <tr>
+				    <td>74883</td>
+				    <td>Primary 6</td>
+				    <td>ENGLISH</td>
+				    <td></td>
+				    <td></td>
+				    <td>SengKang</td>
+				    <td>$440</td>
+				    <td>
+							<a class="viewDetails">View Details</a>	</td>
+					 </tr>
+
+					   	 <tr>
+				    <td>74881</td>
+				    <td>Primary 2</td>
+				    <td>ENGLISH</td>
+				    <td>MATH</td>
+				    <td></td>
+				    <td></td>
+				    <td>$240</td>
+				    <td>
+							<a class="viewDetails">View Details</a>	</td>
+					 </tr>
+
+					   	 <tr>
+				    <td>74880</td>
+				    <td>Secondary 4</td>
+				    <td>PURE CHEM</td>
+				    <td></td>
+				    <td></td>
+				    <td></td>
+				    <td>$240</td>
+				    <td>
+							<a class="viewDetails">View Details</a>	</td>
+					 </tr>
+
+					   	 <tr>
+				    <td>74878</td>
+				    <td>Primary 3</td>
+				    <td>ENGLISH</td>
+				    <td>MATH</td>
+				    <td></td>
+				    <td></td>
+				    <td>$240</td>
+				    <td>
+							<a class="viewDetails">View Details</a>	</td>
+					 </tr>
+
+					   	 <tr>
+				    <td>74877</td>
+				    <td>Primary 2</td>
+				    <td>ENGLISH</td>
+				    <td>MATH</td>
+				    <td></td>
+				    <td></td>
+				    <td>$270</td>
+				    <td>
+							<a class="viewDetails">View Details</a>	</td>
+					 </tr>
+
+					   	 <tr>
+				    <td>74876</td>
+				    <td>Junior College 1</td>
+				    <td>H2 CHEM</td>
+				    <td></td>
+				    <td></td>
+				    <td></td>
+				    <td>$360</td>
+				    <td>
+							<a class="viewDetails">View Details</a>	</td>
+					 </tr>
+
+					   	 <tr>
+				    <td>74875</td>
+				    <td>Junior College 1</td>
+				    <td>H2 MATH</td>
+				    <td></td>
+				    <td></td>
+				    <td></td>
+				    <td>$360</td>
+				    <td>
+							<a class="viewDetails">View Details</a>	</td>
+					 </tr>
+
+					   	 <tr>
+				    <td>74871</td>
+				    <td>Primary 5</td>
+				    <td>MATH</td>
+				    <td>SCIENCE</td>
+				    <td></td>
+				    <td>N2(somerset)</td>
+				    <td></td>
+				    <td>
+							<a class="viewDetails">View Details</a>	</td>
+					 </tr>
+
+					   	 <tr>
+				    <td>74866</td>
+				    <td>Secondary 1</td>
+				    <td>CHINESE</td>
+				    <td></td>
+				    <td></td>
+				    <td></td>
+				    <td>Punggol Road </td>
+				    <td>
+							<a class="viewDetails">View Details</a>	</td>
+					 </tr>
+
+					   	 <tr>
+				    <td>74864</td>
+				    <td>Junior College 2</td>
+				    <td>ECONOMICS</td>
+				    <td></td>
+				    <td></td>
+				    <td></td>
+				    <td></td>
+				    <td>
+							<a class="viewDetails">View Details</a>	</td>
+					 </tr>
+
+					   	 <tr>
+				    <td>74863</td>
+				    <td>Junior College 2</td>
+				    <td>H2 PHY</td>
+				    <td></td>
+				    <td></td>
+				    <td></td>
+				    <td></td>
+				    <td>
+							<a class="viewDetails">View Details</a>	</td>
+					 </tr>
+
+					   	 <tr>
+				    <td>74861</td>
+				    <td>Primary 4</td>
+				    <td>ENGLISH</td>
+				    <td></td>
+				    <td></td>
+				    <td></td>
+				    <td>$170</td>
+				    <td>
+							<a class="viewDetails">View Details</a>	</td>
+					 </tr>
+
+					   	 <tr>
+				    <td>74860</td>
+				    <td>Primary 4</td>
+				    <td>ENGLISH</td>
+				    <td>MATH</td>
+				    <td>CHINESE</td>
+				    <td></td>
+				    <td>$270</td>
+				    <td>
+							<a href="posting_detail.php?info=74860">View Details</a>		</td>
+					 </tr>
+
+					   	 <tr>
+				    <td>74859</td>
+				    <td>Primary 6</td>
+				    <td>ENGLISH</td>
+				    <td>MATH</td>
+				    <td>SCIENCE</td>
+				    <td></td>
+				    <td>$320</td>
+				    <td>
+							<a class="viewDetails">View Details</a>	</td>
+					 </tr>
+
+					   	 <tr>
+				    <td>74857</td>
+				    <td>Secondary 3</td>
+				    <td>COM SCI(PHY/CHEM)</td>
+				    <td></td>
+				    <td></td>
+				    <td></td>
+				    <td>$160</td>
+				    <td>
+							<a class="viewDetails">View Details</a>	</td>
+					 </tr>
+
+					   	 <tr>
+				    <td>74852</td>
+				    <td>Primary 2</td>
+				    <td>ENGLISH</td>
+				    <td>MATH</td>
+				    <td>CHINESE</td>
+				    <td></td>
+				    <td>$260</td>
+				    <td>
+							<a class="viewDetails">View Details</a>	</td>
+					 </tr>
+
+					   	 <tr>
+				    <td>74851</td>
+				    <td>Primary 5</td>
+				    <td>ENGLISH</td>
+				    <td>MATH</td>
+				    <td>SCIENCE</td>
+				    <td>E11(tampines)</td>
+				    <td></td>
+				    <td>
+							<a class="viewDetails">View Details</a>	</td>
+					 </tr>
+
+		   
+				   
+					</tbody>
+				</table>
+				<div class="paginationImg"><img src="images/pagination.jpg"></div>
+			</div>
+
+			
+			<div id="dialog" class="jobDialog" title="Job Post Details" style="display: none">
+			  
+				<form id="form">
+					<h4>Request Details</h4>
+					<table width="100%" border="0" cellpadding="4">
+						<tr>
+				      		<td width="40%">Job ID</td>
+				      		<td width="">74889</td>
+				    	</tr>
+
+				    	<tr>
+				      		<td>Date request</td>
+				      		<td>2017/03/17</td>
+				    	</tr>
+				    	<tr>
+				      		<td>Student Gender</td>
+				      		<td>Male</td>
+				    	</tr>
+				    	<tr>
+				      		<td>Street Name</td>
+				      		<td>Butterworth Lane</td>
+				    	</tr>
+				    	<tr>
+				    		<td>Student Level</td>
+				    		<td>
+				    			Primary 5				    			
+				    		</td>
+				    	</tr>
+				    	<tr>
+				      		<td>Subjects Required</td>
+				      		<td>Maths,Science</td>
+				    	</tr>
+				    	<tr>
+				      		<td>No of lessons/ Duration (hrs)</td>
+				      		<td>4 lessons/ 2 hr</td>
+				    	</tr>
+				    	<tr>
+				      		<td>free</td>
+				      		<td>$230</td>
+				    	</tr>
+				    	<tr>
+				      		<td>Tutor Gender</td>
+				      		<td>Female</td>
+				    	</tr>
+				    	<tr>
+				      		<td>Tutor's occupation preference</td>
+				      		<td>University Undergrads</td>
+				    	</tr>
+				    	<tr>
+				      		<td>Nearest MRT</td>
+				      		<td>E7(kembangan)</td>
+				    	</tr>
+				    	<tr>
+				      		<td>Area</td>
+				      		<td>North</td>
+				    	</tr>
+				    	<tr>
+				      		<td>Remarks</td>
+				      		<td></td>
+				    	</tr>
+				    	<tr>
+				      		<td>Timing</td>
+				      		<td>
+				      			Tue Earliest time to Start: 7.00PM<br/>
+				      			Thur Earliest time to Start: 7.00PM<br/>
+				      			Sun Earliest time to Start: 10.00AM<br/>
+				      		</td>
+				    	</tr>
+				    	
+				    </table>
+				</form>
+				<div style="text-align: center"><a href="#" class="btn">Apply</a></div>
+			</div>
+
+
+		</div>
+		<div class="bottom_block">
+			<div class="container_12">
+				<div class="grid_4">
+					<h3>Stay Informed</h3>
+					<div class="text1">Join Our home tuition centre Newsletter and receive education related news </div>
+					<form id="newsletter">
+						<div class="rel">
+							<div class="success">Your subscribe request has been sent!</div>
+							<label class="email">
+								<input type="email" value="Enter your Email" >
+								<span class="error">*This is not a valid email address.</span>
+							</label>
+						</div>
+						<a href="#" class="btn" data-type="submit">Submit</a>
+					</form>
+				</div>
+				<div class="grid_5 prefix_3">
+					<h3>Stay Connected</h3>
+					<div class="text1">Follow Us on Social Media Accounts </div>
+					SINGAPORE TUITION AGENCY IN SINGAPORE for finding reliable HOME TUITION 
+					<div class="socials">
+						<a href="#"><div class="fa fa-twitter"></div></a>
+						<a href="#"><div class="fa fa-facebook"></div></a>
+						<a href="#"><div class="fa fa-pinterest-square"></div></a>
+						<a href="#"><div class="fa fa-google-plus"></div></a>
+						<a href="#"><div class="fa fa-instagram"></div></a>
+					</div>
+				</div>
+			</div>
+		</div>
+<!--==============================footer=================================-->
+		<footer>
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="copy">
+						Life is Great! &copy; 2017</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+
+	<script>
+		$(document).ready(function(){
+			$( "#dialog" ).dialog({
+		      autoOpen: false,
+		      width: 800,
+		      show: {
+		        effect: "fade",
+		        duration: 500
+		      },
+		      hide: {
+		        effect: "fade",
+		        duration: 500
+		      },
+		     
+		    });
+
+			$(".viewDetails").click(function(){
+				$( "#dialog" ).dialog( "open" );
+			})
+		})
+	</script>
+</html>
